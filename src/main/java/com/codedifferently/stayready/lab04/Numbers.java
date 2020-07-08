@@ -1,5 +1,6 @@
 package com.codedifferently.stayready.lab04;
 
+import java.util.Random;
 
 public class Numbers {
 
@@ -37,26 +38,28 @@ public class Numbers {
     }
 
     public String random4(){
-        
-        return "";
+        String str = "random4()\n*** Output ***";
+        Random rand = new Random();
+        for(int i = 1; i <=4; i++){
+            str += "\n" + rand.nextInt(10);
+        }
+        return str;
     }
 
     public String even(int n){
         String output = "evenNumbers()\n"
     					+"*** Output ***";
-    	for(int i = 2; i < 20 ; i += 2){
-    		output += "\n"+x;
+    	for(int i = 2; i < n ; i += 2){
+    		output += "\n"+ i;
     	}
         return output;
     }
 
     public String powers(int n){
         String str = "powers()\n"
-                      + "*** Output ***\n";
-        for(int i = 2; i < 300; i++){
-            if(i % 2 == 0){
-                str += (int) Math.pow(i, 2);
-            }
+                      + "*** Output ***";
+        for(int i = 1; i <= n; i++){
+            str += "\n" + ((int)Math.pow(2, i));
         }
         return str;
     }

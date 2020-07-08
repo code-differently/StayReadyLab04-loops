@@ -47,10 +47,14 @@ public class NumbersTest {
     @Test
     public void random4Test(){
         //: Given
+        Numbers numbers = new Numbers();
+        String expected = numbers.random4();
 
         //: When
+        String actual = expected;
 
         //: Then
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -58,11 +62,11 @@ public class NumbersTest {
         //: Given
     	Numbers numbers = new Numbers();
     	String expected ="evenNumbers()\n*** Output ***\n2\n4\n6\n8\n10\n12\n14\n16\n18";
+        
         //: When
-
-    	String actual = numbers.evenNumbers();
+    	String actual = numbers.even(20);
+        
         //: Then
-    	
     	Assert.assertEquals("The two strings are equal",expected,actual);
     }
 
@@ -71,10 +75,13 @@ public class NumbersTest {
         //: Given
     	Numbers numbers = new Numbers();
     	String expected ="powers()\n*** Output ***\n2\n4\n8\n16\n32\n64\n128\n256";
-
         //: When
-        String actual = numbers.powersTest();
-
+        String actual = numbers.powers(8);
+        
+        //: Then
+        Assert.assertEquals(expected, actual);
+    }
+        
         //: Then
         Assert.assertEquals(expected, actual);
     }
