@@ -8,6 +8,9 @@ public class Shapes {
     }
 
     public String tableSquare(){
+        Integer dimension= 4;
+        Integer i = 0; 
+        int rows = 1; int cols = 1; 
         return "";
     }
 
