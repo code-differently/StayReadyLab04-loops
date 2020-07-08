@@ -27,7 +27,7 @@ public class CarRide {
             System.out.println(response);
         }
         while(input.equals(correctInput)==false);
-
+        scanin.close();
         return "";
     }
     

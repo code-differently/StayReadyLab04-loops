@@ -1,5 +1,6 @@
 package com.codedifferently.stayready.lab04;
 
+import java.util.Random;
 
 public class Numbers {
 
@@ -36,7 +37,14 @@ public class Numbers {
     }
 
     public String random4(){
-        return "";
+        Random random  = new Random();
+        String randomnumString = "";
+        for(int i=0;i<4;i++)
+        {
+            randomnumString = randomnumString + random.nextInt(10);
+            randomnumString = randomnumString + "\n";
+        }
+        return randomnumString;
     }
 
     public String even(int n){

@@ -45,10 +45,13 @@ public class NumbersTest {
     @Test
     public void random4Test(){
         //: Given
+        Numbers numbers = new Numbers();
 
         //: When
-
+        String expected = "";
+        String actual = numbers.random4();
         //: Then
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
