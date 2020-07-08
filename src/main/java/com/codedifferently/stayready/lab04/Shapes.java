@@ -1,11 +1,10 @@
 package com.codedifferently.stayready.lab04;
 
 
-public class Shapes 
-{
+public class Shapes {
 
     public String triangle(){
-        String output = "evenNumbers()\n"
+         String output = "triangle()\n"
     					+"*** Output ***\n";
         for(int row = 1; row <= 5; row++){
             for(int column = 0; column < row; column++){
@@ -20,8 +19,8 @@ public class Shapes
         String output = "tableSquare()\n"
                         +"*** Output ***\n"
                         +"A 4x4 table square\n";
-        for(int row = 1; row <= 6; row++){
-            for(int column = 1; column <= 6; column++){
+        for(int row = 1; row <= 4; row++){
+            for(int column = 1; column <= 4; column++){
                 if((row*column) <= 9){
                     output += "  " + row*column + " |";
                 }
@@ -34,7 +33,7 @@ public class Shapes
         return output;
     }
 
-    public String tableSquares(int n) {
+    public String tableSquares(int n){
         String output = "tableSquares(6)\n"
                         +"*** Output ***\n"
                         +"A 6x6 table square\n";

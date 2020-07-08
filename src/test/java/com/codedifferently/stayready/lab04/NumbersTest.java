@@ -81,9 +81,5 @@ public class NumbersTest {
         //: Then
         Assert.assertEquals(expected, actual);
     }
-        
-        //: Then
-        Assert.assertEquals(expected, actual);
-    }
 
 }
