@@ -3,10 +3,12 @@ package com.codedifferently.stayready.lab04;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class NumbersTest {
+public class NumbersTest 
+{
 
     @Test
-    public void oneToTenTest(){
+    public void oneToTenTest()
+    {
         //: Given
         Numbers numbers = new Numbers();
         String expected = "oneToTen()\n*** Output ***\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10";
@@ -19,7 +21,8 @@ public class NumbersTest {
     }
 
     @Test
-    public void oddNumbersTest(){
+    public void oddNumbersTest()
+    {
         //: Given
     	Numbers numbers = new Numbers();
     	String expected ="oddNumbers()\n*** Output ***\n1\n3\n5\n7\n9\n11\n13\n15\n17\n19";
@@ -32,7 +35,8 @@ public class NumbersTest {
     }
 
     @Test
-    public void squaresTest(){
+    public void squaresTest()
+    {
         //: Given
 
         //: When
@@ -41,7 +45,8 @@ public class NumbersTest {
     }
 
     @Test
-    public void random4Test(){
+    public void random4Test()
+    {
         //: Given
 
         //: When
@@ -50,7 +55,8 @@ public class NumbersTest {
     }
 
     @Test
-    public void evenTest(){
+    public void evenTest()
+    {
         //: Given
 
         //: When
@@ -59,7 +65,8 @@ public class NumbersTest {
     }
 
     @Test
-    public void powersTest(){
+    public void powersTest()
+    {
         //: Given
 
         //: When

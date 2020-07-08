@@ -4,12 +4,14 @@ package com.codedifferently.stayready.lab04;
 import org.junit.Test;
 import org.junit.Assert;
 
-public class ShapesTest {
+public class ShapesTest 
+{
 
 
 
     @Test
-    public void triangleTest(){
+    public void triangleTest()
+    {
         //: Given
 
         //: When
@@ -18,7 +20,8 @@ public class ShapesTest {
     }
 
     @Test
-    public void tableSquareTest(){
+    public void tableSquareTest()
+    {
         //: Given
 
         //: When

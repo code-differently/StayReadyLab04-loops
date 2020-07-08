@@ -1,17 +1,21 @@
 package com.codedifferently.stayready.lab04;
 
 
-public class Shapes {
+public class Shapes 
+{
 
-    public String triangle(){
+    public String triangle()
+    {
         return "";
     }
 
-    public String tableSquare(){
+    public String tableSquare()
+    {
         return "";
     }
 
-    public String tableSquares(int n){
+    public String tableSquares(int n)
+    {
         return "";
     }
 }

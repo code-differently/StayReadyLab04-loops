@@ -1,40 +1,50 @@
 package com.codedifferently.stayready.lab04;
 
 
-public class Numbers {
+public class Numbers 
+{
 
-    public String oneToTen(){
+    public String oneToTen()
+    {
     	String output ="oneToTen()\n"
     				   +"*** Output ***";
-    	for(int x=1; x<=10; x++){
+        for(int x=1; x<=10; x++)
+        {
     		output += "\n"+x;
     	}
         return output;
     }
 
-    public String oddNumbers(){
+
+    public String oddNumbers()
+    {
     	String output = "oddNumbers()\n"
     					+"*** Output ***";
-    	for(int x =1; x < 20 ; x+=2){
+        for(int x =1; x < 20 ; x+=2)
+        {
     		output += "\n"+x;
     	}
     		
         return output;
     }
 
-    public String squares(){
+    public String squares()
+    {
         return "";
     }
 
-    public String random4(){
+    public String random4()
+    {
         return "";
     }
 
-    public String even(int n){
+    public String even(int n)
+    {
         return "";
     }
 
-    public String powers(int n){
+    public String powers(int n)
+    {
         return "";
     }
 

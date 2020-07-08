@@ -1,8 +1,10 @@
 package com.codedifferently.stayready.lab04;
 
-public class CarRide {
+public class CarRide 
+{
 
-    public String areWeThereYetTest(){
+    public String areWeThereYetTest()
+    {
         return "";
     }
 
