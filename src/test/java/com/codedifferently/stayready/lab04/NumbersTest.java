@@ -73,7 +73,7 @@ public class NumbersTest {
     	String expected ="powers()\n*** Output ***\n2\n4\n8\n16\n32\n64\n128\n256";
 
         //: When
-        String actual = numbers.powers();
+        String actual = numbers.powersTest();
 
         //: Then
         Assert.assertEquals(expected, actual);
