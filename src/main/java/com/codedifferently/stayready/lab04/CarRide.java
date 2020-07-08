@@ -11,10 +11,6 @@ public class CarRide {
         {
             output ="Good!";
         }
-        else
-        {
-            output = "Are we there yet?!";
-        }
         return output;
     }
 
