@@ -42,9 +42,8 @@ public class Numbers {
         for(int i=0;i<4;i++)
         {
             randomnumString = randomnumString + random.nextInt(10);
-            randomnumString = randomnumString + "\n";
         }
-        return randomnumString;
+        return randomnumString.trim();
     }
 
     public String even(int n){

@@ -46,10 +46,10 @@ public class NumbersTest {
     public void random4Test(){
         //: Given
         Numbers numbers = new Numbers();
-
+        String test = "1234";
         //: When
-        String expected = "";
-        String actual = numbers.random4();
+        Integer expected = test.length();
+        Integer actual = numbers.random4().length();
         //: Then
         Assert.assertEquals(expected, actual);
     }
