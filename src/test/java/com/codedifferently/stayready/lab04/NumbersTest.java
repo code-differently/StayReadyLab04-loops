@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class NumbersTest {
-
     @Test
     public void oneToTenTest(){
         //: Given
@@ -34,37 +33,53 @@ public class NumbersTest {
     @Test
     public void squaresTest(){
         //: Given
+        Numbers numbers = new Numbers();
+        String expected = "squares()\n*** Output ***\n1\n4\n9\n16\n25\n36\n49\n64\n81\n100";
 
         //: When
+        String actual = numbers.squares();
 
         //: Then
-    }
+        Assert.assertEquals(expected,actual);
 
+    }
+//We can't test random number 
     @Test
     public void random4Test(){
         //: Given
-
+        Numbers numbers = new Numbers();
         //: When
-
+        String expected = "random4()\n*** Output ***\n3\n5\n2\n8";
+        String actual= numbers.random4();
         //: Then
+        Assert.assertEquals(expected,actual);
     }
 
     @Test
     public void evenTest(){
         //: Given
+        Numbers numbers = new Numbers();
 
         //: When
+        String expected = "even()\n*** Output ***\n2\n4\n6\n8\n10\n12\n14\n16\n18";
+        String actual = numbers.even(20);
 
         //: Then
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void powersTest(){
         //: Given
+        Numbers numbers = new Numbers();
+        int stop=8;
 
         //: When
+        String expected = "powers()\n*** Output ***\n2\n4\n8\n16\n32\n64\n128\n256";
+        String actual = numbers.powers(stop);
 
         //: Then
+        Assert.assertEquals(expected, actual);
     }
 
 }
