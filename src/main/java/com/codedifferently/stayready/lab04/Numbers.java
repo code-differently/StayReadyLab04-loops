@@ -1,5 +1,7 @@
 package com.codedifferently.stayready.lab04;
 
+import java.util.*;
+
 
 public class Numbers {
 
@@ -23,19 +25,45 @@ public class Numbers {
     }
 
     public String squares(){
-        return "";
+        String emptyString = "";
+        for (int i = 1; i < 11; i++){
+
+            String numberString = Integer.toString(i * i);
+            emptyString = emptyString.concat(numberString) +"\n";
+
+
+        }
+        return emptyString;
     }
 
     public String random4(){
-        return "";
+        String output = "";
+        Random ran = new Random(); 
+        for(int i=0; i < 4 ; i++) {
+            int nxt = ran.nextInt(10);
+            output += Integer.toString(nxt) + "\n";} 
+        return output;
     }
 
     public String even(int n){
-        return "";
+        String emptyString = "";
+        for (int i = 2; i < n; i++){
+            if (i % 2 == 0){
+                String numberString = Integer.toString(i);
+                emptyString = emptyString.concat(numberString) + "\n";
+            }
+
+        }
+        return emptyString;
     }
 
     public String powers(int n){
-        return "";
+        String emptyString = "";
+        for (int i = 1; i <= n; i++){      
+            String numberString = Double.toString(Math.pow(2.0, i));
+            emptyString = emptyString.concat(numberString) + "\n";
+        }
+        return emptyString;
     }
 
 }
