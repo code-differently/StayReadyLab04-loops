@@ -4,35 +4,41 @@ import java.util.Scanner;
 
 
 public class CarRide {
-    //method is a behavior for the class CarRide
-    public String areWeThereYet() {
-        //we need input
-        Scanner in = new Scanner(System.in);
 
-        System.out.println("Are we there yet?");
+    public String str = "Are we there yet?"; //init string
+    Scanner sc = new Scanner(System.in); // set up of scanner object for user input
 
-        //While is another form of loop, different from a for loop, it uses boolean
-        // logic and repeats until the condition is false. ... See Chapter 3, page 94 in Core Java
-        // this line reads: while the user input is not (!) true, keep printing out "Are we there yet?"
-        while (isYes(in.nextLine())) {
-
-
+    //areWeThereYet returns a string...debated if it should just return void. no arguments accepted.
+    public String areWeThereYet(){
+        //prints a message out to the user
+        System.out.println(str);
+        //begin loop, this while the user input is not yes;while isYes != true.
+        while(isYes(sc.nextLine()) != true){
+            //it'll keep asking are we there yet
+            System.out.println(str);
+            //it'll keep asking for user input
+            String reAsk = sc.nextLine();
+            //it'll keep evaluating the user input as true or false.
+            isYes(reAsk);
         }
-        //issue, does not return after loop fails, just ends program
-        return "";
+        //finally returns str
+        return str;
     }
 
-    //returns true or false is the user input is the expected input
-    //issue, what if the user says yes in lowercase
-    public boolean isYes(String Input) {
-        return null;
+    public boolean isYes(String input){ //helper function
+        String necessaryCon = "Yes";    //condition to return true
+
+        if(necessaryCon.equals(input)){
+            str = "Good"; // public string is reassigned to "Good"
+            return true;
+        }
+        return false; //this second return works like an else statement...
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
         CarRide carRide = new CarRide();
-        carRide.areWeThereYet();
+        System.out.println(carRide.areWeThereYet());
     }
 
 }
-
 
