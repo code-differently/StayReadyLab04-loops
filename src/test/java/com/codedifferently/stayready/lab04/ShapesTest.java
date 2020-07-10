@@ -12,7 +12,7 @@ public class ShapesTest {
     public void triangleTest(){
         //: Given
         Shapes tri = new Shapes();
-        String expected = "triangle()\n*** Output ***\n*\n**\n***\n****\n*****";
+        String expected = "triangle()\n*** Output ***\n*\n**\n***\n****\n*****\n";
 
         //: When
         String actual = tri.triangle();

@@ -61,7 +61,7 @@ public class NumbersTest {
     public void evenTest(){
         //: Given
 
-        
+
         Numbers numbers = new Numbers();
         int testVal = 20;
         String expected = "even()\n*** Output ***\n2\n4\n6\n8\n10\n12\n14\n16\n18";
