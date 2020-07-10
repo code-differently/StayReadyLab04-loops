@@ -33,38 +33,53 @@ public class NumbersTest {
 
     @Test
     public void squaresTest(){
-        //: Given
-
+        Numbers numbers = new Numbers();
+        String expected = "squares()\n*** Output ***"+numbers.squares();
+ 
         //: When
-
+        String actual = numbers.squares();
+ 
         //: Then
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void random4Test(){
         //: Given
-
+        Numbers numbers = new Numbers();
+        String expected = "random4()\n*** Output ***"+numbers.random4();
+ 
         //: When
-
+        String actual = numbers.random4();
+ 
         //: Then
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void evenTest(){
         //: Given
-
+        Numbers numbers = new Numbers();
+        String expected = "evens()\n*** Output ***"+numbers.even(5);
+ 
         //: When
-
+        String actual = numbers.even(5);
+ 
         //: Then
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void powersTest(){
         //: Given
-
+        Numbers numbers = new Numbers();
+        String expected = "powers()\n*** Output ***"+numbers.powers(4);
+ 
         //: When
-
+        String actual = numbers.powers(4);
+ 
         //: Then
+        Assert.assertEquals(expected, actual);
     }
 
 }
