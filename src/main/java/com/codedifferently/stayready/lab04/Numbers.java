@@ -33,15 +33,15 @@ public class Numbers {
         return output;
     }
 
-    public String random4(){
-        Random rand = new Random(3);
-        String result = "";
-        for (int i = 0; i < 4; i++){
-            Integer r1 = rand.nextInt();
-            result += Integer.toString(r1);
-        }
-        return result;
-    }
+//    public String random4(){
+//        Random rand = new Random();
+//        String result = "";
+//        for (int i = 0; i < 4; i++){
+//            //Integer r1 = rand.ints(1,10);
+//            result += Integer.toString(r1);
+//        }
+//        return result;
+//    }
 
     public String even(int n){
         String output = "even(20)\n"
